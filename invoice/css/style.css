@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  body #options-btn,
+  body .options {
+    display: none !important;
+  }
+  body .bill-print,
+  body .bill-print * {
+    visibility: visible !important;
+  }
+}
+
+.bill-print {
+  width: 100%;
+  direction: rtl;
+  max-width: 1280px;
+  padding: 1rem;
+  margin: 16px auto;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: center;
+}
+.bill-print img {
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media screen and (max-width: 639px) {
+  .bill-print {
+    width: 200%;
+    transform: scale(0.5);
+    transform-origin: top left;
+  }
+  .bill-print button,
+  .bill-print .options {
+    font-size: 32px !important;
+  }
+}
+.bill-print section {
+  width: 100%;
+}
+.bill-print h1 {
+  font-size: 38px;
+}
+.bill-print li {
+  list-style: none;
+}
+.bill-print hr {
+  width: 100%;
+}
+.bill-print > section:nth-of-type(1) {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 16px;
+}
+.bill-print > section:nth-of-type(1) .org-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.bill-print > section:nth-of-type(1) .org-info ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 600;
+}
+.bill-print > section:nth-of-type(1) > img {
+  max-width: 10rem;
+  flex: 1;
+  height: auto;
+}
+.bill-print > section:nth-of-type(2) {
+  width: 100%;
+  text-align: center;
+}
+.bill-print > section:nth-of-type(3) ul {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 20px;
+  font-weight: 500;
+}
+.bill-print > section:nth-of-type(3) ul li {
+  padding: 8px;
+  width: 50%;
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.bill-print > section:nth-of-type(3) ul li span:nth-child(1) {
+  font-weight: 600;
+}
+.bill-print > section:nth-of-type(4) table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.bill-print > section:nth-of-type(4) table td {
+  font-size: 18px;
+  padding: 8px;
+}
+.bill-print > section:nth-of-type(4) table,
+.bill-print > section:nth-of-type(4) th,
+.bill-print > section:nth-of-type(4) td {
+  border: 1px solid black; /* Adds border to the table, header, and data cells */
+}
+.bill-print > section:nth-of-type(5) {
+  display: flex;
+  justify-content: center;
+}
+.bill-print > section:nth-of-type(5) ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+.bill-print > section:nth-of-type(5) ul li {
+  display: grid;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+  grid-template-columns: 200px 1fr;
+  font-weight: 500;
+  font-size: 20px;
+  font-weight: 500;
+  border-bottom: 1px solid black;
+  padding: 8px;
+}
+.bill-print > section:nth-last-of-type(1) {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.bill-print > section:nth-last-of-type(1) .org-seal {
+  height: 180px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: auto;
+}
+.bill-print #options-btn {
+  width: 100%;
+  padding: 16px;
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.bill-print #options-btn:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.bill-print .options {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+.bill-print .options > div {
+  width: 100%;
+  max-width: 500px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  gap: 16px;
+}
+.bill-print .options button {
+  padding: 8px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.bill-print .options.active {
+  max-height: 200px;
+}/*# sourceMappingURL=style.css.map */
