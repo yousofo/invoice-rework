@@ -30,7 +30,7 @@
   border: 1px solid #ccc;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 8px;
   align-items: center;
 }
 .bill-print img {
@@ -40,8 +40,8 @@
 }
 @media screen and (max-width: 639px) {
   .bill-print {
-    width: 200%;
-    transform: scale(0.5);
+    width: 220%;
+    transform: scale(0.4);
     transform-origin: top left;
   }
   .bill-print button,
@@ -61,7 +61,6 @@
 .bill-print hr {
   margin-bottom: 4px;
   width: 100%;
-  border-top-color: #F8C521;
 }
 .bill-print > section:nth-of-type(1) {
   display: grid;
@@ -156,7 +155,7 @@
   align-items: end;
 }
 .bill-print > section:nth-last-of-type(1) .org-seal {
-  height: 140px;
+  height: 128px;
   -o-object-fit: contain;
      object-fit: contain;
   width: auto;

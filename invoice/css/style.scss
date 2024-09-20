@@ -32,15 +32,15 @@ body {
   border: 1px solid #ccc;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 8px;
   align-items: center;
   img {
     height: auto;
     object-fit: contain;
   }
   @media screen and (max-width: 639px) {
-    width: 200%;
-    transform: scale(0.5);
+    width: 220%;
+    transform: scale(0.4);
     transform-origin: top left;
 
     button,
@@ -63,7 +63,6 @@ body {
   hr {
     margin-bottom: 4px;
     width: 100%;
-    border-top-color: #F8C521;
   }
 
   & > section:nth-of-type(1) {
@@ -167,7 +166,7 @@ body {
     justify-content: space-between;
     align-items: end;
     .org-seal {
-      height: 140px;
+      height: 128px;
       object-fit: contain;
       width: auto;
     }
