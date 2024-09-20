@@ -27,7 +27,7 @@
   border: 1px solid #ccc;
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 16px;
   align-items: center;
 }
 .bill-print img {
@@ -43,7 +43,7 @@
   }
   .bill-print button,
   .bill-print .options {
-    font-size: 32px !important;
+    font-size: 28px !important;
   }
 }
 .bill-print section {
@@ -59,15 +59,18 @@
   width: 100%;
 }
 .bill-print > section:nth-of-type(1) {
-  display: flex;
+  display: grid;
   width: 100%;
-  justify-content: space-between;
-  gap: 16px;
+  gap: 8px;
+  grid-template-columns: repeat(3, 1fr);
 }
 .bill-print > section:nth-of-type(1) .org-info {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+.bill-print > section:nth-of-type(1) .org-info h2 {
+  font-size: 22px;
 }
 .bill-print > section:nth-of-type(1) .org-info ul {
   display: flex;
@@ -78,19 +81,20 @@
 .bill-print > section:nth-of-type(1) > img {
   max-width: 10rem;
   flex: 1;
+  justify-self: end;
   height: auto;
 }
-.bill-print > section:nth-of-type(2) {
-  width: 100%;
+.bill-print > section:nth-of-type(1) > h1 {
+  align-self: center;
   text-align: center;
 }
-.bill-print > section:nth-of-type(3) ul {
+.bill-print > section:nth-of-type(2) ul {
   display: flex;
   flex-wrap: wrap;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
 }
-.bill-print > section:nth-of-type(3) ul li {
+.bill-print > section:nth-of-type(2) ul li {
   padding: 8px;
   width: 50%;
   display: grid;
@@ -98,43 +102,48 @@
   -moz-column-gap: 10px;
        column-gap: 10px;
 }
-.bill-print > section:nth-of-type(3) ul li span:nth-child(1) {
+.bill-print > section:nth-of-type(2) ul li span:nth-child(1) {
   font-weight: 600;
 }
-.bill-print > section:nth-of-type(4) table {
+.bill-print > section:nth-of-type(3) table {
   width: 100%;
   border-collapse: collapse;
 }
-.bill-print > section:nth-of-type(4) table td {
-  font-size: 18px;
-  padding: 8px;
+.bill-print > section:nth-of-type(3) table td {
+  font-size: 16px;
+  padding: 4px;
 }
-.bill-print > section:nth-of-type(4) table,
-.bill-print > section:nth-of-type(4) th,
-.bill-print > section:nth-of-type(4) td {
+.bill-print > section:nth-of-type(3) table,
+.bill-print > section:nth-of-type(3) th,
+.bill-print > section:nth-of-type(3) td {
   border: 1px solid black; /* Adds border to the table, header, and data cells */
 }
-.bill-print > section:nth-of-type(5) {
+.bill-print > section:nth-of-type(4) {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
-.bill-print > section:nth-of-type(5) ul {
+.bill-print > section:nth-of-type(4) ul {
   display: flex;
   flex-direction: column;
   gap: 8px;
   max-width: -moz-fit-content;
   max-width: fit-content;
 }
-.bill-print > section:nth-of-type(5) ul li {
+.bill-print > section:nth-of-type(4) ul li {
   display: grid;
   -moz-column-gap: 16px;
        column-gap: 16px;
   grid-template-columns: 200px 1fr;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   border-bottom: 1px solid black;
-  padding: 8px;
+  padding: 4px;
+}
+.bill-print > section:nth-of-type(4) ul li input {
+  background-color: transparent;
+  border: none;
+  font-size: inherit;
 }
 .bill-print > section:nth-last-of-type(1) {
   display: flex;
@@ -142,7 +151,7 @@
   align-items: end;
 }
 .bill-print > section:nth-last-of-type(1) .org-seal {
-  height: 180px;
+  height: 160px;
   -o-object-fit: contain;
      object-fit: contain;
   width: auto;
