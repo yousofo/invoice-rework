@@ -39,8 +39,8 @@ body {
     object-fit: contain;
   }
   @media screen and (max-width: 639px) {
-    width: 220%;
-    transform: scale(0.4);
+    width: 200%;
+    transform: scale(0.5);
     transform-origin: top left;
 
     button,
@@ -70,12 +70,12 @@ body {
     width: 100%;
     // justify-content: space-between;
     gap: 8px;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     .org-info {
       display: flex;
       flex-direction: column;
       gap: 4px;
-      h2{
+      h2 {
         font-size: 22px;
       }
       ul {
@@ -94,7 +94,7 @@ body {
       // height: fit-content;
       height: auto;
     }
-    >h1{
+    > h1 {
       align-self: center;
       text-align: center;
     }
@@ -153,10 +153,10 @@ body {
         font-weight: 500;
         border-bottom: 1px solid black;
         padding: 4px;
-        input{
+        input {
           background-color: transparent;
           border: none;
-          font-size: inherit
+          font-size: inherit;
         }
       }
     }
