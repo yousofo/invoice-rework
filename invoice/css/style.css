@@ -71,7 +71,7 @@
 .bill-print > section:nth-of-type(1) .org-info {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 4px;
 }
 .bill-print > section:nth-of-type(1) .org-info h2 {
   font-size: 22px;
@@ -79,7 +79,8 @@
 .bill-print > section:nth-of-type(1) .org-info ul {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  font-size: 15px;
+  gap: 4px;
   font-weight: 600;
 }
 .bill-print > section:nth-of-type(1) > img {
@@ -99,7 +100,7 @@
   font-weight: 500;
 }
 .bill-print > section:nth-of-type(2) ul li {
-  padding: 8px;
+  padding: 4px;
   width: 50%;
   display: grid;
   grid-template-columns: 110px 1fr;
@@ -129,7 +130,7 @@
 .bill-print > section:nth-of-type(4) ul {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 4px;
   max-width: -moz-fit-content;
   max-width: fit-content;
 }
@@ -155,7 +156,8 @@
   align-items: end;
 }
 .bill-print > section:nth-last-of-type(1) .org-seal {
-  height: 128px;
+  max-height: 128px;
+  min-height: 64px;
   -o-object-fit: contain;
      object-fit: contain;
   width: auto;
