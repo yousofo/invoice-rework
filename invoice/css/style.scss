@@ -17,6 +17,9 @@ body {
     .bill-print * {
       visibility: visible !important;
     }
+    .bill-print {
+      margin: 0 !important;
+    }
   }
 }
 
@@ -24,12 +27,12 @@ body {
   width: 100%;
   direction: rtl;
   max-width: 1280px;
-  padding: 1rem;
+  padding: 12px;
   margin: 16px auto;
   border: 1px solid #ccc;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 12px;
   align-items: center;
   img {
     height: auto;
@@ -42,7 +45,7 @@ body {
 
     button,
     .options {
-      font-size: 28px !important;
+      font-size: 24px !important;
     }
   }
 
@@ -51,7 +54,7 @@ body {
   }
 
   h1 {
-    font-size: 38px;
+    font-size: 32px;
   }
 
   li {
@@ -99,7 +102,7 @@ body {
     ul {
       display: flex;
       flex-wrap: wrap;
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 500;
 
       li {
@@ -144,7 +147,7 @@ body {
         column-gap: 16px;
         grid-template-columns: 200px 1fr;
         font-weight: 500;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 500;
         border-bottom: 1px solid black;
         padding: 4px;
@@ -162,7 +165,7 @@ body {
     justify-content: space-between;
     align-items: end;
     .org-seal {
-      height: 160px;
+      height: 140px;
       object-fit: contain;
       width: auto;
     }
