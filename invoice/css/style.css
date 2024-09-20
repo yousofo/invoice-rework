@@ -59,7 +59,9 @@
   list-style: none;
 }
 .bill-print hr {
+  margin-bottom: 4px;
   width: 100%;
+  border-top-color: #F8C521;
 }
 .bill-print > section:nth-of-type(1) {
   display: grid;
