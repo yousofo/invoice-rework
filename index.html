@@ -109,7 +109,13 @@
           </li>
           <li>
             <span>نوع الدفع</span>
-            <span><input type="text" disabled value="كاش" /></span>
+            <span>
+              <select name="" id="">
+                <option value="كاش">كاش</option>
+                <option value="visa">visa</option>
+                <option value="mastercard">mastercard</option>
+              </select>
+            </span>
           </li>
           <li>
             <span>الرصيد المستحق</span>
@@ -127,7 +133,7 @@
         />
       </section>
       <!--  -->
-      <button id="options-btn">
+      <!-- <button id="options-btn">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="32"
@@ -139,15 +145,10 @@
             d="m4.22 10.78l-1.44 1.44l12.5 12.5l.72.686l.72-.687l12.5-12.5l-1.44-1.44L16 22.564z"
           />
         </svg>
-      </button>
+      </button> -->
       <div class="options active">
-        <div>
-          <div><span>نوع الدفع: </span><span>كاش</span></div>
-          <div>
-            <button id="print-btn">طباعة</button>
-            <button id="export-btn">اصدار</button>
-          </div>
-        </div>
+        <button id="print-btn">طباعة</button>
+        <button id="export-btn">اصدار</button>
       </div>
     </main>
     <script src="./invoice/js/qrcode.min.js"></script>
@@ -162,9 +163,9 @@
       });
 
       //show options sections
-      document.querySelector("#options-btn").addEventListener("click", () => {
-        document.querySelector(".options").classList.toggle("active");
-      });
+      // document.querySelector("#options-btn").addEventListener("click", () => {
+      //   document.querySelector(".options").classList.toggle("active");
+      // });
       // print btn
       document.querySelector("#print-btn").addEventListener("click", () => {
         window.print();

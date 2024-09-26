@@ -40,8 +40,8 @@
 }
 @media screen and (max-width: 639px) {
   .bill-print {
-    width: 220%;
-    transform: scale(0.4);
+    width: 200%;
+    transform: scale(0.5);
     transform-origin: top left;
   }
   .bill-print button,
@@ -162,19 +162,7 @@
      object-fit: contain;
   width: auto;
 }
-.bill-print #options-btn {
-  width: 100%;
-  padding: 16px;
-  font-size: 22px;
-  color: white;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-.bill-print #options-btn:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-}
 .bill-print .options {
-  max-height: 0;
   overflow: hidden;
   transition: all 0.3s ease;
   width: 100%;
@@ -182,20 +170,9 @@
   justify-content: center;
   gap: 8px;
 }
-.bill-print .options > div {
-  width: 100%;
-  max-width: 500px;
-  justify-content: space-between;
-  align-items: center;
-  display: flex;
-  gap: 16px;
-}
 .bill-print .options button {
   padding: 8px 20px;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-}
-.bill-print .options.active {
-  max-height: 200px;
 }/*# sourceMappingURL=style.css.map */

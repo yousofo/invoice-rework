@@ -174,43 +174,31 @@ body {
     }
   }
 
-  #options-btn {
-    width: 100%;
-    padding: 16px;
-    font-size: 22px;
-    color: white;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  // #options-btn {
+  //   width: 100%;
+  //   padding: 16px;
+  //   font-size: 22px;
+  //   color: white;
+  //   cursor: pointer;
+  //   transition: all 0.3s ease;
 
-    &:hover {
-      background-color: rgba(0, 0, 0, 0.1);
-    }
-  }
+  //   &:hover {
+  //     background-color: rgba(0, 0, 0, 0.1);
+  //   }
+  // }
   .options {
-    max-height: 0;
     overflow: hidden;
     transition: all 0.3s ease;
     width: 100%;
     display: flex;
     justify-content: center;
     gap: 8px;
-    > div {
-      // flex-direction: column;
-      width: 100%;
-      max-width: 500px;
-      justify-content: space-between;
-      align-items: center;
-      display: flex;
-      gap: 16px;
-    }
+    // flex-direction: column;
     button {
       padding: 8px 20px;
       border-radius: 4px;
       cursor: pointer;
       font-size: 16px;
-    }
-    &.active {
-      max-height: 200px;
     }
   }
 }
