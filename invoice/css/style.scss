@@ -163,6 +163,7 @@ body {
         // width: 50%;
         display: grid;
         grid-template-columns: 1fr 1fr;
+        align-items: center;
         column-gap: 5px;
         span:nth-child(1) {
           font-weight: 600;
