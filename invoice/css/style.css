@@ -20,7 +20,7 @@
     margin: 0 !important;
   }
   body .bill-print > section:nth-child(1) {
-    height: 136px !important;
+    height: 150px !important;
   }
 }
 
