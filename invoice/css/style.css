@@ -46,8 +46,6 @@
 }
 @media screen and (max-width: 639px) {
   .bill-print {
-    width: 200%;
-    transform: scale(0.5);
     transform-origin: top left;
   }
   .bill-print button,

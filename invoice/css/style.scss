@@ -45,8 +45,8 @@ body {
     object-fit: contain;
   }
   @media screen and (max-width: 639px) {
-    width: 200%;
-    transform: scale(0.5);
+    // width: 200%;
+    // transform: scale(0.5);
     transform-origin: top left;
 
     button,
