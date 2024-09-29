@@ -35,6 +35,9 @@ body {
   body .bill-print > section:nth-of-type(1) {
     height: 128px !important;
   }
+  body .bill-print > section:nth-of-type(2) {
+    height: 58px !important;
+  }
   body .bill-print > section:nth-of-type(4) ul {
     gap: 0px !important;
   }
