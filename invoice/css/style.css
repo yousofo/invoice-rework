@@ -58,7 +58,7 @@
 .bill-print section {
   width: 100%;
 }
-.bill-print h1 {
+.bill-print h2 {
   font-size: 32px;
 }
 .bill-print li {
@@ -95,7 +95,7 @@
   justify-self: end;
   height: auto;
 }
-.bill-print > section:nth-of-type(1) > h1 {
+.bill-print > section:nth-of-type(1) > h2 {
   align-self: center;
   text-align: center;
 }
