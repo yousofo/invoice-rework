@@ -71,10 +71,14 @@
 }
 .bill-print > section:nth-of-type(1) {
   display: grid;
+  height: -moz-fit-content;
+  height: fit-content;
   width: 100%;
+  max-height: 150px;
   align-items: center;
   gap: 4px;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
 }
 @media screen and (max-width: 639px) {
   .bill-print > section:nth-of-type(1) {

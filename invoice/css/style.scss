@@ -79,11 +79,14 @@ body {
 
   & > section:nth-of-type(1) {
     display: grid;
+    height: fit-content;
     width: 100%;
+    max-height: 150px;
     align-items: center;
     // justify-content: space-between;
     gap: 4px;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
     @media screen and (max-width: 639px) {
       grid-template-columns: 1fr 1fr;
       @media print {
