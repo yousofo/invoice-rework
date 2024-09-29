@@ -44,6 +44,7 @@ body {
     height: auto;
     object-fit: contain;
   }
+
   @media screen and (max-width: 639px) {
     // width: 200%;
     // transform: scale(0.5);
@@ -72,8 +73,13 @@ body {
     width: 100%;
     align-items: center;
     // justify-content: space-between;
-    gap: 8px;
+    gap: 4px;
     grid-template-columns: repeat(3, 1fr);
+    @media screen and (max-width: 639px) {
+      grid-template-columns: 1fr 1fr;
+      @media print {
+      }
+    }
     .org-info {
       display: flex;
       flex-direction: column;
@@ -87,20 +93,44 @@ body {
         gap: 2px;
         font-weight: 600;
       }
+      @media screen and (max-width: 639px) {
+        order: 3;
+        grid-column: span 2;
+        @media print {
+          grid-column: span 1;
+          order: unset;
+        }
+      }
     }
 
-    & > img {
+     > img {
       max-width: 10rem;
       flex: 1;
       justify-self: end;
       // height: fit-content;
       height: auto;
+      @media screen and (max-width: 639px) {
+        // order: 1;
+
+        @media print {
+          // order: unset;
+        }
+      }
     }
     > h1 {
       font-size: 28px;
-      text-align: center !important;
       height: fit-content;
       flex: 1;
+      text-align: center;
+      @media screen and (max-width: 639px) {
+        text-align: start;
+        order: 0;
+
+        @media print {
+          order: unset;
+          text-align: center;
+        }
+      }
     }
   }
   // user info
@@ -115,8 +145,8 @@ body {
         padding: 4px;
         width: 50%;
         display: grid;
-        grid-template-columns: 110px 1fr;
-        column-gap: 10px;
+        grid-template-columns: 80px 1fr;
+        column-gap: 5px;
         span:nth-child(1) {
           font-weight: 600;
         }
@@ -129,8 +159,13 @@ body {
       width: 100%;
       border-collapse: collapse;
       td {
-        font-size: 16px;
-        padding: 4px;
+        font-size: 14px;
+        padding: 1px;
+      }
+      thead{
+        td{
+          font-weight: 600;
+        }
       }
     }
     table,
@@ -150,8 +185,8 @@ body {
       max-width: fit-content;
       li {
         display: grid;
-        column-gap: 16px;
-        grid-template-columns: 200px 1fr;
+        column-gap: 8px;
+        grid-template-columns: 125px 1fr;    
         font-weight: 500;
         font-size: 16px;
         font-weight: 500;
