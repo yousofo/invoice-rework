@@ -162,7 +162,7 @@ body {
         padding: 4px;
         // width: 50%;
         display: grid;
-        grid-template-columns: 80px 1fr;
+        grid-template-columns: 1fr 1fr;
         column-gap: 5px;
         span:nth-child(1) {
           font-weight: 600;
