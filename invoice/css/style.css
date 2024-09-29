@@ -9,6 +9,9 @@
     margin: 0 !important;
   }
 }
+body {
+  height: 100vh;
+}
 @media print {
   body * {
     visibility: hidden;
@@ -24,12 +27,13 @@
     visibility: visible !important;
   }
   body .bill-print {
+    height: 100vh;
     max-width: 100% !important;
     margin: 0 !important;
     padding: 4px !important;
   }
   body .bill-print > section:nth-of-type(1) {
-    max-height: 150px !important;
+    max-height: 170px !important;
   }
   body .bill-print > section:nth-of-type(4) ul {
     gap: 0px !important;
