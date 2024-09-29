@@ -3,14 +3,18 @@
   padding: 0;
   margin: 0;
 }
-
+@media print {
+  @page {
+    margin: 0 !important;
+  }
+}
 body {
   @media print {
     * {
       visibility: hidden;
       -webkit-print-color-adjust: exact; /* Ensures colors are printed */
       print-color-adjust: exact; /* Standard property */
-      transform: scale(1); /* Prevents Safari from auto-scaling */
+      // transform: scale(1);
     }
     #options-btn,
     .options {

@@ -5,11 +5,15 @@
 }
 
 @media print {
+  @page {
+    margin: 0 !important;
+  }
+}
+@media print {
   body * {
     visibility: hidden;
     -webkit-print-color-adjust: exact; /* Ensures colors are printed */
     print-color-adjust: exact; /* Standard property */
-    transform: scale(1); /* Prevents Safari from auto-scaling */
   }
   body #options-btn,
   body .options {
