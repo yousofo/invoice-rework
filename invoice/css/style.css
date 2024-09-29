@@ -7,6 +7,9 @@
 @media print {
   body * {
     visibility: hidden;
+    -webkit-print-color-adjust: exact; /* Ensures colors are printed */
+    print-color-adjust: exact; /* Standard property */
+    transform: scale(1); /* Prevents Safari from auto-scaling */
   }
   body #options-btn,
   body .options {
@@ -17,6 +20,7 @@
     visibility: visible !important;
   }
   body .bill-print {
+    max-width: 100% !important;
     margin: 0 !important;
   }
   body .bill-print > section:nth-of-type(4) ul {
