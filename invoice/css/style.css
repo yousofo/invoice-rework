@@ -45,9 +45,6 @@
      object-fit: contain;
 }
 @media screen and (max-width: 639px) {
-  .bill-print {
-    transform-origin: top left;
-  }
   .bill-print button,
   .bill-print .options {
     font-size: 24px !important;
