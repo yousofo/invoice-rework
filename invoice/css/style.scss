@@ -20,6 +20,12 @@ body {
     .bill-print {
       margin: 0 !important;
     }
+    .bill-print > section:nth-of-type(4) ul{
+      gap: 0px !important;
+    }
+    .bill-print > section:nth-of-type(4) ul li{
+      padding: 2px !important;
+    }
   }
 }
 
