@@ -20,10 +20,10 @@ body {
     .bill-print {
       margin: 0 !important;
     }
-    .bill-print > section:nth-of-type(4) ul{
+    .bill-print > section:nth-of-type(4) ul {
       gap: 0px !important;
     }
-    .bill-print > section:nth-of-type(4) ul li{
+    .bill-print > section:nth-of-type(4) ul li {
       padding: 2px !important;
     }
   }
@@ -59,10 +59,6 @@ body {
     width: 100%;
   }
 
-  h2 {
-    font-size: 32px;
-  }
-
   li {
     list-style: none;
   }
@@ -74,6 +70,7 @@ body {
   & > section:nth-of-type(1) {
     display: grid;
     width: 100%;
+    align-items: center;
     // justify-content: space-between;
     gap: 8px;
     grid-template-columns: repeat(3, 1fr);
@@ -82,13 +79,12 @@ body {
       flex-direction: column;
       gap: 4px;
       h2 {
-        font-size: 22px;
+        font-size: 20px;
       }
       ul {
         display: flex;
         flex-direction: column;
-        font-size: 15px;
-        gap: 4px;
+        gap: 2px;
         font-weight: 600;
       }
     }
@@ -100,9 +96,11 @@ body {
       // height: fit-content;
       height: auto;
     }
-    > h2 {
-      align-self: center;
-      text-align: center;
+    > h1 {
+      font-size: 28px;
+      text-align: center !important;
+      height: fit-content;
+      flex: 1;
     }
   }
   // user info
@@ -179,7 +177,6 @@ body {
       width: auto;
     }
   }
-  
 
   // #options-btn {
   //   width: 100%;
