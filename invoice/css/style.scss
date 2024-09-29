@@ -3,19 +3,11 @@
   padding: 0;
   margin: 0;
 }
-@media print {
-  @page {
-    margin: 0 !important;
-  }
-}
+
 body {
-  height: 100vh;
   @media print {
     * {
       visibility: hidden;
-      -webkit-print-color-adjust: exact; /* Ensures colors are printed */
-      print-color-adjust: exact; /* Standard property */
-      // transform: scale(1);
     }
     #options-btn,
     .options {
@@ -26,24 +18,10 @@ body {
       visibility: visible !important;
     }
     .bill-print {
-      height: 100vh;
-      max-width: 100% !important;
       margin: 0 !important;
-      padding: 4px !important;
-      > section:nth-of-type(1){
-        height: 128px !important;
-        // max-height: 170px !important;
+      >section:nth-child(1){
+        height: 136px !important;
       }
-      > section:nth-of-type(2){
-        height: 58px !important;
-        // max-height: 170px !important;
-      }
-    }
-    .bill-print > section:nth-of-type(4) ul {
-      gap: 0px !important;
-    }
-    .bill-print > section:nth-of-type(4) ul li {
-      padding: 2px !important;
     }
   }
 }
@@ -63,11 +41,10 @@ body {
     height: auto;
     object-fit: contain;
   }
-
   @media screen and (max-width: 639px) {
-    // width: 200%;
-    // transform: scale(0.5);
-    // transform-origin: top left;
+    width: 200%;
+    transform: scale(0.5);
+    transform-origin: top left;
 
     button,
     .options {
@@ -77,6 +54,10 @@ body {
 
   section {
     width: 100%;
+  }
+
+  h1 {
+    font-size: 32px;
   }
 
   li {
@@ -89,69 +70,36 @@ body {
 
   & > section:nth-of-type(1) {
     display: grid;
-    height: fit-content;
     width: 100%;
-    align-items: center;
     // justify-content: space-between;
-    gap: 4px;
+    gap: 8px;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    @media screen and (max-width: 639px) {
-      grid-template-columns: 1fr 1fr;
-      @media print {
-      }
-    }
     .org-info {
       display: flex;
       flex-direction: column;
       gap: 4px;
       h2 {
-        font-size: 20px;
+        font-size: 22px;
       }
       ul {
         display: flex;
         flex-direction: column;
-        gap: 2px;
+        font-size: 15px;
+        gap: 4px;
         font-weight: 600;
-      }
-      @media screen and (max-width: 639px) {
-        order: 3;
-        grid-column: span 2;
-        @media print {
-          grid-column: span 1;
-          order: unset;
-        }
       }
     }
 
-    > img {
+    & > img {
       max-width: 10rem;
       flex: 1;
       justify-self: end;
       // height: fit-content;
       height: auto;
-      @media screen and (max-width: 639px) {
-        // order: 1;
-
-        @media print {
-          // order: unset;
-        }
-      }
     }
     > h1 {
-      font-size: 28px;
-      height: fit-content;
-      flex: 1;
+      align-self: center;
       text-align: center;
-      @media screen and (max-width: 639px) {
-        text-align: start;
-        order: 0;
-
-        @media print {
-          order: unset;
-          text-align: center;
-        }
-      }
     }
   }
   // user info
@@ -166,8 +114,8 @@ body {
         padding: 4px;
         width: 50%;
         display: grid;
-        grid-template-columns: 80px 1fr;
-        column-gap: 5px;
+        grid-template-columns: 110px 1fr;
+        column-gap: 10px;
         span:nth-child(1) {
           font-weight: 600;
         }
@@ -180,13 +128,8 @@ body {
       width: 100%;
       border-collapse: collapse;
       td {
-        font-size: 14px;
-        padding: 1px;
-      }
-      thead {
-        td {
-          font-weight: 600;
-        }
+        font-size: 16px;
+        padding: 4px;
       }
     }
     table,
@@ -206,8 +149,8 @@ body {
       max-width: fit-content;
       li {
         display: grid;
-        column-gap: 8px;
-        grid-template-columns: 125px 1fr;
+        column-gap: 16px;
+        grid-template-columns: 200px 1fr;
         font-weight: 500;
         font-size: 16px;
         font-weight: 500;
@@ -233,6 +176,7 @@ body {
       width: auto;
     }
   }
+  
 
   // #options-btn {
   //   width: 100%;
