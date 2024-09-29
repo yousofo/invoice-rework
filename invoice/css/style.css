@@ -20,7 +20,7 @@
     margin: 0 !important;
   }
   body .bill-print > section:nth-child(1) {
-    height: 150px !important;
+    height: 170px !important;
   }
 }
 
@@ -77,13 +77,13 @@
   gap: 4px;
 }
 .bill-print > section:nth-of-type(1) .org-info h2 {
-  font-size: 22px;
+  font-size: 20px;
 }
 .bill-print > section:nth-of-type(1) .org-info ul {
   display: flex;
   flex-direction: column;
-  font-size: 15px;
-  gap: 4px;
+  font-size: 16px;
+  gap: 2px;
   font-weight: 600;
 }
 .bill-print > section:nth-of-type(1) > img {
@@ -118,8 +118,11 @@
   border-collapse: collapse;
 }
 .bill-print > section:nth-of-type(3) table td {
-  font-size: 16px;
-  padding: 4px;
+  font-size: 14px;
+  padding: 1px;
+}
+.bill-print > section:nth-of-type(3) table thead td {
+  font-weight: 500;
 }
 .bill-print > section:nth-of-type(3) table,
 .bill-print > section:nth-of-type(3) th,
@@ -139,14 +142,14 @@
 }
 .bill-print > section:nth-of-type(4) ul li {
   display: grid;
-  -moz-column-gap: 16px;
-       column-gap: 16px;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
   grid-template-columns: 200px 1fr;
   font-weight: 500;
   font-size: 16px;
   font-weight: 500;
   border-bottom: 1px solid black;
-  padding: 4px;
+  padding: 2px;
 }
 .bill-print > section:nth-of-type(4) ul li input {
   background-color: transparent;

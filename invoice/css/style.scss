@@ -20,7 +20,7 @@ body {
     .bill-print {
       margin: 0 !important;
       >section:nth-child(1){
-        height: 150px !important;
+        height: 170px !important;
       }
     }
   }
@@ -79,13 +79,13 @@ body {
       flex-direction: column;
       gap: 4px;
       h2 {
-        font-size: 22px;
+        font-size: 20px;
       }
       ul {
         display: flex;
         flex-direction: column;
-        font-size: 15px;
-        gap: 4px;
+        font-size: 16px;
+        gap: 2px;
         font-weight: 600;
       }
     }
@@ -128,8 +128,13 @@ body {
       width: 100%;
       border-collapse: collapse;
       td {
-        font-size: 16px;
-        padding: 4px;
+        font-size: 14px;
+        padding: 1px;
+      }
+      thead{
+        td{
+          font-weight: 500;
+        }
       }
     }
     table,
@@ -149,13 +154,13 @@ body {
       max-width: fit-content;
       li {
         display: grid;
-        column-gap: 16px;
+        column-gap: 8px;
         grid-template-columns: 200px 1fr;
         font-weight: 500;
         font-size: 16px;
         font-weight: 500;
         border-bottom: 1px solid black;
-        padding: 4px;
+        padding: 2px;
         input {
           background-color: transparent;
           border: none;
